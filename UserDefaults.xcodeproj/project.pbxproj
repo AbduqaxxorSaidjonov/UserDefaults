@@ -15,6 +15,8 @@
 		76E2E7C727FB8D9E00F763F3 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7C627FB8D9E00F763F3 /* Defaults.swift */; };
 		76E2E7C927FB8DEF00F763F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7C827FB8DEF00F763F3 /* User.swift */; };
 		76E2E7CC27FB8EE100F763F3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7CB27FB8EE100F763F3 /* HomeScreen.swift */; };
+		76E2E7CF27FB911F00F763F3 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7CE27FB911F00F763F3 /* Account.swift */; };
+		76E2E7D127FB919500F763F3 /* Defs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7D027FB919500F763F3 /* Defs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		76E2E7C627FB8D9E00F763F3 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		76E2E7C827FB8DEF00F763F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76E2E7CB27FB8EE100F763F3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		76E2E7CE27FB911F00F763F3 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		76E2E7D027FB919500F763F3 /* Defs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		76E2E7B027FB8D4800F763F3 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
+				76E2E7CD27FB910D00F763F3 /* objects */,
 				76E2E7CA27FB8ECF00F763F3 /* screens */,
 				76E2E7C527FB8D6200F763F3 /* utils */,
 				76E2E7C427FB8D5200F763F3 /* apputils */,
@@ -90,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				76E2E7C627FB8D9E00F763F3 /* Defaults.swift */,
-				76E2E7C827FB8DEF00F763F3 /* User.swift */,
+				76E2E7D027FB919500F763F3 /* Defs.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -101,6 +106,15 @@
 				76E2E7CB27FB8EE100F763F3 /* HomeScreen.swift */,
 			);
 			path = screens;
+			sourceTree = "<group>";
+		};
+		76E2E7CD27FB910D00F763F3 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				76E2E7C827FB8DEF00F763F3 /* User.swift */,
+				76E2E7CE27FB911F00F763F3 /* Account.swift */,
+			);
+			path = objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +193,8 @@
 				76E2E7BB27FB8D4900F763F3 /* Persistence.swift in Sources */,
 				76E2E7C927FB8DEF00F763F3 /* User.swift in Sources */,
 				76E2E7B227FB8D4800F763F3 /* UserDefaultsApp.swift in Sources */,
+				76E2E7CF27FB911F00F763F3 /* Account.swift in Sources */,
+				76E2E7D127FB919500F763F3 /* Defs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
