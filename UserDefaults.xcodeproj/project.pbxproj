@@ -17,6 +17,8 @@
 		76E2E7CC27FB8EE100F763F3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7CB27FB8EE100F763F3 /* HomeScreen.swift */; };
 		76E2E7CF27FB911F00F763F3 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7CE27FB911F00F763F3 /* Account.swift */; };
 		76E2E7D127FB919500F763F3 /* Defs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7D027FB919500F763F3 /* Defs.swift */; };
+		76E2E7D427FB97E600F763F3 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 76E2E7D327FB97E600F763F3 /* SwiftKeychainWrapper */; };
+		76E2E7D627FB983800F763F3 /* password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2E7D527FB983800F763F3 /* password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		76E2E7CB27FB8EE100F763F3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		76E2E7CE27FB911F00F763F3 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		76E2E7D027FB919500F763F3 /* Defs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defs.swift; sourceTree = "<group>"; };
+		76E2E7D527FB983800F763F3 /* password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E2E7D427FB97E600F763F3 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +117,7 @@
 			children = (
 				76E2E7C827FB8DEF00F763F3 /* User.swift */,
 				76E2E7CE27FB911F00F763F3 /* Account.swift */,
+				76E2E7D527FB983800F763F3 /* password.swift */,
 			);
 			path = objects;
 			sourceTree = "<group>";
@@ -133,6 +138,9 @@
 			dependencies = (
 			);
 			name = UserDefaults;
+			packageProductDependencies = (
+				76E2E7D327FB97E600F763F3 /* SwiftKeychainWrapper */,
+			);
 			productName = UserDefaults;
 			productReference = 76E2E7AE27FB8D4800F763F3 /* UserDefaults.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +169,9 @@
 				Base,
 			);
 			mainGroup = 76E2E7A527FB8D4800F763F3;
+			packageReferences = (
+				76E2E7D227FB97E600F763F3 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 76E2E7AF27FB8D4800F763F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +206,7 @@
 				76E2E7B227FB8D4800F763F3 /* UserDefaultsApp.swift in Sources */,
 				76E2E7CF27FB911F00F763F3 /* Account.swift in Sources */,
 				76E2E7D127FB919500F763F3 /* Defs.swift in Sources */,
+				76E2E7D627FB983800F763F3 /* password.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76E2E7D227FB97E600F763F3 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76E2E7D327FB97E600F763F3 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76E2E7D227FB97E600F763F3 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		76E2E7BC27FB8D4900F763F3 /* UserDefaults.xcdatamodeld */ = {
